@@ -3,6 +3,24 @@
 Source code and data files updated by R. Ay, August 2023.
 For a reference to this project, see "PromptEngineering_A ParcticalExample - RealPython.pdf"
 
+For payment and usage information on the OPENAI platform see:  https://platform.openai.com/account/usage  (gmail account)
+As a benchmark, the first run of the provided code and data files cost $0.06.
+
+## Modifications Made
+To set the environment variable (saved in .env) for the OPENAI key, use:
+$env:OPENAI_API_KEY="secret-key-goes-here"
+
+## To create and use the "virtual environment:
+The following command creates a virtual environment named <environment_name>, upgrades and dependencies (like "pip"), and changest the terminal/console prompt to <environment_name>.
+PS> python -m venv <environment_name> --upgrade-deps --prompt="<environment_name>"
+
+The following command activates the virtual environment:
+PS> <environment_name>\scripts\activate
+
+The following command deactiates the virtual environment:
+PS> deactivate
+
+
 This repository contains a practical example to showcase a few common prompt engineering techniques. It's the codebase used in the associated Real Python tutorial on [practical prompt engineering](https://realpython.com/practical-prompt-engineering/). The project allows you to preprocess customer service chats using GPT-3.5 and GPT-4 using the OpenAI API.
 
 ## Setup
