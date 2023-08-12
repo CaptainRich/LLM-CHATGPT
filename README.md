@@ -1,6 +1,7 @@
 # Prompt Engineering: A Practical Example
 
 Source code and data files updated by R. Ay, August 2023.
+For a reference to this project, see "PromptEngineering_A ParcticalExample - RealPython.pdf"
 
 This repository contains a practical example to showcase a few common prompt engineering techniques. It's the codebase used in the associated Real Python tutorial on [practical prompt engineering](https://realpython.com/practical-prompt-engineering/). The project allows you to preprocess customer service chats using GPT-3.5 and GPT-4 using the OpenAI API.
 
