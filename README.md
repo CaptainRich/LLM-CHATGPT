@@ -23,7 +23,7 @@ The following command activates the virtual environment:
 
 PS> <environment_name>\scripts\activate
 
-The following command deactiates the virtual environment:
+The following command deactivates the virtual environment:
 
 PS> deactivate
 

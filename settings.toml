@@ -1,6 +1,6 @@
 [general]
 chat_models = ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4"]
-model = "text-davinci-003"
+model = "gpt-4"
 max_tokens = 2100
 temperature = 0
 
@@ -22,6 +22,7 @@ Sanitize the text provided in >>>CONTENT<<< in multiple steps:
 
 [support_amy] 2023-06-15T14:45:35+00:00 : Hello! How can I assist you today?
 [greg_stone] 2023-06-15T14:46:20+00:00 : I can't seem to find the download link for my purchased software.
+
 [support_amy] 2023-06-15T14:47:01+00:00 : No problem, Greg. Let me find that for you. Can you please provide
 [greg_stone] 2023-06-15T14:47:38+00:00 : It's 1245789. Thanks for helping me out!
 
