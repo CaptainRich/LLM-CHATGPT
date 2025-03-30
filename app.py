@@ -4,9 +4,15 @@ import tomllib
 from pathlib import Path
 
 import openai
+from openai import OpenAI
+
+from dotenv import load_dotenv
 
 # Authenticate
+load_dotenv()
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
+print( "API Key = ", openai.api_key)
 
 
 class Settings(dict):
@@ -56,7 +62,9 @@ def main(args: argparse.Namespace) -> None:
 
 def get_completion(content: str, settings: Settings) -> str:
     """Send a request to the /completions endpoint."""
-    response = openai.Completion.create(
+    client = OpenAI()
+    #response = openai.Completion.create(
+    response = client.chat.completions.create(
         model=settings.model,
         prompt=assemble_prompt(content, settings),
         max_tokens=settings.max_tokens,
@@ -67,7 +75,10 @@ def get_completion(content: str, settings: Settings) -> str:
 
 def get_chat_completion(content: str, settings: Settings) -> str:
     """Send a request to the /chat/completions endpoint."""
-    response = openai.ChatCompletion.create(
+
+    client = OpenAI()
+    #response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model=settings.model,
         messages=assemble_chat_messages(content, settings),
         temperature=settings.temperature,
